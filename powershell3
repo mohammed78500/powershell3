@@ -1,0 +1,5 @@
+74 Start-Process calc.exe
+75 Start-Sleep -Seconds 1
+76 Start-Process calc.exe
+77 $AllProcess = Get-Process
+78 $AllProcess | Where-Object {$_.Name -like "*calc*"}
